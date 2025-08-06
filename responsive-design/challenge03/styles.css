@@ -1,0 +1,62 @@
+/* 
+General rules:
+    - set font-sizes in rem
+    - set paddings in em (depend on font-size of element)
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+/* font-family and p font-size go here */
+body {
+    font-family: Roboto;
+    font-size: 1.3rem;
+}
+
+.hero {
+    background-color: #23424A;
+    padding: 100px 0;
+    color: white;
+}
+
+.container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.hero__text {
+    width: 70%;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+p {
+    font-weight: 300;
+}
+
+.hero p {
+    margin-bottom: 3em;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #38CFD9;
+    font-weight: 700;
+    border: none;
+    /* Set border-radius to big number (bigger than element hight) to get perfectly rounded corners */
+    border-radius: 100px;
+    padding: 0.8em 1.5em;
+    color: black;
+}
+
+.button:hover {
+    cursor: pointer;
+    opacity: 0.75;
+}

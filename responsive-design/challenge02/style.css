@@ -23,15 +23,14 @@ body {
   font-family: sans-serif;
 }
 
-.container {
+.intro {
   width: 100%;
   background: #23424a;
   color: white;
 
 }
 
-.intro-container,
-.body-content {
+.container {
   max-width: 750px;
   width: 80%;
   padding: 50px 0;
