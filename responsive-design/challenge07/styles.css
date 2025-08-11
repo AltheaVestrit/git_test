@@ -1,0 +1,128 @@
+/*  Resets */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+body {
+    min-height: 100vh;
+}
+
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+p {
+    text-wrap: pretty;
+}
+
+/* Variables */
+
+:root {
+    --primary: #222C2A;
+    --secondary: #F3EED9;
+    --accent: #824936;
+}
+
+/* Fonts */
+
+h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 3.75rem;
+    font-weight: 900;
+}
+
+h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 2.25rem;
+    font-weight: 900;
+}
+
+p {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 1.3125rem;
+    margin: 1em 0;
+}
+
+/* Colors */
+
+.text-accent {
+    color: var(--accent);
+}
+
+.text-primary {
+    color: var(--primary);
+}
+
+.text-secondary {
+    color: var(--secondary);
+}
+
+.bg-primary {
+    background-color: var(--primary);
+}
+
+.bg-secondary {
+    background-color: var(--secondary);
+}
+
+.bg-accent {
+    background-color: var(--accent);
+}
+
+/* Common elements */
+
+.container {
+    max-width: 1128px;
+    padding: 4rem;
+}
+
+header {
+    min-height: 660px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3em;
+
+}
+
+/* Individual elements */
+
+.text-center {
+    text-align: center;
+}
+
+p.text-light {
+    font-weight: 300;
+    font-size: 1.125;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+}
