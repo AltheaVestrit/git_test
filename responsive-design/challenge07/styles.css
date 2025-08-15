@@ -63,7 +63,7 @@ p {
     font-family: Roboto, sans-serif;
     font-weight: 400;
     font-size: 1.3125rem;
-    margin: 1em 0;
+    margin-top: 1em;
 }
 
 /* Colors */
@@ -95,8 +95,9 @@ p {
 /* Common elements */
 
 .container {
-    max-width: 1128px;
     padding: 4rem;
+    max-width: 1128px;
+    margin: 0 auto;
 }
 
 header {
@@ -105,6 +106,10 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+header p {
+    text-align: center;
 }
 
 .row {
@@ -125,4 +130,17 @@ p.text-light {
     font-size: 1.125;
     letter-spacing: 0.35em;
     text-transform: uppercase;
+}
+
+/* Media queries */
+
+@media (max-width: 600px) {
+    .row {
+        grid-template-columns: 1fr;
+        gap: 1em;
+    }
+
+    .container {
+        padding: 3rem 1rem;
+    }
 }
