@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@700&display=swap');
+
+:root {
+    --dark-blue: #2E323F;
+    --medium-blue: #3B4050;
+    --light-blue: #6F737F;
+    --white: #FFFFFF;
+    --gold: #A59678;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    font-size: 18px;
+    font-family: Montserrat, sans-serif;
+}
+
+/* Common elements */
+.flex {
+    display: flex;
+}
+
+.container {
+    justify-content: center;
+    width: 100vw;
+}
+
+.row {
+    justify-content: space-between;
+}
+
+.bg-dark-blue {
+    background-color: var(--dark-blue);
+}
+
+/* Nav */
+
+nav {
+    font-family: Oswald;
+    font-size: 1rem;
+    width: 80vw;
+    color: white;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+}
