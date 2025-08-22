@@ -5,27 +5,129 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CRL</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="navigation_toggle.css" />
   </head>
   <body>
-    <div class="flex container bg-dark-blue">
-      <nav class="flex row">
-        <div class="logo">
-          <ul>
-            <li><a href="#">CRL</a></li>
+    <header>
+      <div class="container">
+        <button class="nav-toggle" aria-label="open navigation">
+          <span class="hamburger"></span>
+        </button>
+        <a href="#" class="logo"
+          ><img src="logo.svg" alt="conquering responsive layouts"
+        /></a>
+        <nav class=".nav--visible">
+          <ul class="nav__list nav__list--primary">
+            <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
           </ul>
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#" class="nav__link">Sign In</a></li>
+            <li class="nav__item">
+              <a href="#" class="nav__link nav__link--btn">Sign Up</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero__left">
+            Responsive layouts
+            <span class="text-gold">don't have to be a struggle</span>
+          </h1>
+          <div class="hero__right">
+            <p class="hero__text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi,
+              labore earum mollitia libero a cum deserunt sapiente.
+            </p>
+            <a href="#" class="btn">I want to learn</a>
+          </div>
         </div>
-        <div class="flex">
-          <ul class="flex">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-          <ul class="flex">
-            <li><a href="#">Sign In</a></li>
-            <li><a href="#">Sign Up</a></li>
-          </ul>
+      </section>
+
+      <section class="section1">
+        <div class="container section__content">
+          <article>
+            <h2 class="text-gold">Mobile-first</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid
+              eligendi quod repellat inventore rerum. Quasi eaque exercitationem
+              dolores veritatis tempore?
+            </p>
+          </article>
+          <article>
+            <h2 class="text-gold">Efficient</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid
+              eligendi quod repellat inventore rerum. Quasi eaque exercitationem
+              dolores veritatis tempore?
+            </p>
+          </article>
+          <article>
+            <h2 class="text-gold">Done right</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid
+              eligendi quod repellat inventore rerum. Quasi eaque exercitationem
+              dolores veritatis tempore?
+            </p>
+          </article>
         </div>
-      </nav>
-    </div>
+      </section>
+
+      <section class="section2">
+        <div class="container">
+          <div class="section2__main">
+            <h2 class="text-gold">It doesn't have to be hard</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+              numquam cupiditate commodi perferendis facere, a quam iusto
+              laborum in officia iure unde eos eveniet vero dignissimos labore
+              accusamus corrupti? Consequuntur harum laborum autem quis! Neque
+              modi magni natus et. Et.
+            </p>
+            <img src="the-image.jpg" alt="hand-drawn web page designs" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reiciendis qui vitae quo labore placeat inventore expedita. Animi
+              eveniet voluptates, dolorem cum aut odio maxime perspiciatis
+              ipsum. Minus quos, provident molestias vero fuga rerum inventore
+              explicabo tenetur optio corporis, voluptate deleniti?
+            </p>
+          </div>
+          <div class="section2__sidebar">
+            <article>
+              <h2>Break it down</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Aliquid eligendi quod repellat inventore rerum. Quasi eaque
+                exercitationem dolores veritatis tempore?
+              </p>
+            </article>
+            <article>
+              <h2>Work your way up</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Aliquid eligendi quod repellat inventore rerum. Quasi eaque
+                exercitationem dolores veritatis tempore?
+              </p>
+            </article>
+            <article>
+              <h2>Finish it</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Aliquid eligendi quod repellat inventore rerum. Quasi eaque
+                exercitationem dolores veritatis tempore?
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="main.js"></script>
   </body>
 </html>
